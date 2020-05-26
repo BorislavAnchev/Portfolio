@@ -1,0 +1,9 @@
+@import '~bootstrap';
+
+.message-content {
+    text-align: left;
+}
+
+.container {
+    text-align: center;
+}

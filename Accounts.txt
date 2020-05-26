@@ -1,0 +1,12 @@
+The "bank" project has a branch for working with backend mock and a branch for working with a the "RESTful-API" project as a
+fully funcitonal backend.
+
+The ChatClient app uses the ChatAPI for storing the messages and the SecuringAngularApps.API/SecuringAngularApps.STS project
+for authentications.
+
+The securing-angular-client app uses the SecuringAngularApps.API/SecuringAngularApps.API for the REST services and
+SecuringAngularApps.API/SecuringAngularApps.STS for the authentication.
+
+The BethanysPieShop, ChatAPI, RazorPagesMovie, SecuringAngularApps.API and SecuringAngularApps.STS projects need to have their
+databases created with the Update-Database command in the Visual Studio Package Manager Console and accounts need to be created
+via the create account/register functionality of the particular project.

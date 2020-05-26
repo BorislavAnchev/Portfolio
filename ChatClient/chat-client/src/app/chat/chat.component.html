@@ -1,0 +1,23 @@
+<div class="container justify-content-md-center">
+  <div *ngIf="messages && messages.length">
+    <div class="container" *ngFor="let message of messages">
+      <div class="row">
+        <div class="col-md-auto">{{ message.sender }}:</div>
+        <div class="col-md-auto message-content">
+          {{ message.content }}
+        </div>
+        <div class="col-md-4 offset-md-4">{{ message.timeLog }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <input type="text" [(ngModel)]="nickname" /><input
+      type="text"
+      [(ngModel)]="message"
+    />
+  </div>
+  <div>
+    <input type="submit" (click)="sendMessage()" value="Send" />
+  </div>
+</div>
